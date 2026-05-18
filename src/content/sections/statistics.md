@@ -16,7 +16,7 @@ stats_list:
       prefix: ""
       number: 24
       suffix: "/7"
-  - label: "Made in Tirol, shipped worldwide"
+  - label: "Open source on day one"
     value:
       prefix: ""
       number: 100

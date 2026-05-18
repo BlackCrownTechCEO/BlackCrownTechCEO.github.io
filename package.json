@@ -1,7 +1,7 @@
 {
   "name": "blackcrowntech-portfolio",
   "version": "1.0.0",
-  "description": "BlackCrownTech — Autonomous AI Systems from the Alps. Built with Astro. Based on the PowerAI Astro template by Sitepins.",
+  "description": "BlackCrownTech portfolio site — production AI agent systems, MCP servers, encrypted relays, and quality tooling. Built with Astro, based on the PowerAI Astro template by Sitepins.",
   "author": "Jason Lechner <jasonlechner.business@gmail.com>",
   "license": "MIT",
   "type": "module",

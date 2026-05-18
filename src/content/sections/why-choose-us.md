@@ -18,7 +18,7 @@ feature_list:
   - title: Open Source Where It Counts
     icon: "/images/icons/competitive-edge.svg"
     content: "Skills, MCP servers, harnesses, and quality tooling are public. Proprietary IP stays internal. Reuse beats reinvention."
-  - title: Built in the Alps
+  - title: Async-First Operations
     icon: "/images/icons/worldwide-impact.svg"
-    content: "Tirol-based, EU-resident, GDPR-aware. Clear jurisdiction, predictable timezones, and the kind of focus you only find in mountain studios."
+    content: "Email + scoped calls, never surprise standups. We've shipped for partners across EU, UK, and US — work happens on your timeline, not ours."
 ---

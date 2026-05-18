@@ -1,13 +1,13 @@
 ---
 banner:
   title: |
-    Autonomous AI Systems.
+    Production AI systems.
     <br/>
-    <mark>Built in the Alps.</mark>
-  content: "BlackCrownTech ships agent-based AI platforms, secure relay networks, and developer tooling — staff-engineer productivity from prompt to production."
+    <mark>Open where it earns scale.</mark>
+  content: "Anti-Sloper, VOID OMEGA Network, BlackCrownAgent, CrownForge Harness, claude-code-mcp — eleven shipping projects: autonomous coding agents, encrypted relays, MCP servers, and the quality tooling that keeps them honest."
   badge:
     enable: true
-    label: Tirol · Austria · Est. 2024
+    label: 11 open-source projects · Est. 2024
     images: []
   image: "/images/banner.png"
   button_dark:
@@ -16,6 +16,6 @@ banner:
     link: "/projects"
   button_primary:
     enable: true
-    label: "Hire BlackCrownTech"
-    link: "/contact"
+    label: "Sponsor the Studio"
+    link: "/sponsor"
 ---

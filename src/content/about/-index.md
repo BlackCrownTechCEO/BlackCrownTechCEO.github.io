@@ -1,15 +1,15 @@
 ---
 title: "About BlackCrownTech"
 meta_title: "About — BlackCrownTech"
-description: "BlackCrownTech is an Austrian AI engineering studio founded by Jason Lechner, building autonomous agents, secure relays, and developer tooling from Tirol."
+description: "BlackCrownTech is an independent AI engineering studio shipping eleven open-source projects: autonomous coding agents, secure relays, MCP servers, and quality tooling."
 image: "/images/teams/jason-lechner.webp"
 draft: false
 page_header:
   title: |
-    Built in Tirol.
+    One studio.
     <br/>
-    <mark>Shipped Worldwide.</mark>
-  subtitle: "BlackCrownTech is an Austrian AI engineering studio. We build autonomous agent systems, encrypted infrastructure, and quality-obsessed developer tooling — for teams who care about the difference between 'demo' and 'shipped'."
+    <mark>Eleven shipping projects.</mark>
+  subtitle: "BlackCrownTech is an independent AI engineering studio. We build autonomous coding agents, encrypted relays, MCP servers, and the quality tooling that keeps them honest — for teams who care about the difference between 'demo' and 'shipped'."
   button_dark:
   badge: "About Us"
 who_we_are:
@@ -47,10 +47,9 @@ our_team:
   founder:
     name: "Jason Lechner"
     role: "Founder & CEO"
-    location: "Wattens, Tirol — Austria"
     image: "/images/teams/jason-lechner.webp"
     bio: |
-      English native speaker, rooted in Tirol, technology-driven. I run BlackCrownTech hands-on — architecture, prompt engineering, secure infrastructure, agent orchestration, and product polish. No fake teammates, no agency overhead, no excuses. When you hire BlackCrownTech, you get me on the keyboard.
+      I run BlackCrownTech hands-on — architecture, prompt engineering, secure infrastructure, agent orchestration, and product polish. No fake teammates, no agency overhead, no excuses. When you hire BlackCrownTech, you get me on the keyboard.
     links:
       - { label: "Email", url: "mailto:jasonlechner.business@gmail.com" }
       - { label: "GitHub", url: "https://github.com/BlackCrownTechCEO" }

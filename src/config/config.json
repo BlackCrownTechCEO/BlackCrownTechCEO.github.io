@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "BlackCrownTech — Autonomous AI Systems from the Alps",
+    "title": "BlackCrownTech — Production AI Systems",
     "base_url": "https://blackcrowntechceo.github.io",
     "base_path": "/",
     "trailing_slash": false,
@@ -23,10 +23,10 @@
     "contact_form_action": "mailto:jasonlechner.business@gmail.com",
     "apply_form_action": "mailto:jasonlechner.business@gmail.com",
     "newsletter_form_action": "#",
-    "footer_text": "Autonomous AI agents, secure relays, and developer tooling — built in Tirol, Austria.",
+    "footer_text": "Autonomous coding agents, encrypted relays, MCP servers, and the quality tooling that keeps them honest.",
     "mail": "jasonlechner.business@gmail.com",
-    "phone": "+43 676 5943353",
-    "copyright": "© [BlackCrownTech](https://github.com/BlackCrownTechCEO) · Built with Astro · Wattens, Tirol"
+    "phone": "",
+    "copyright": "© [BlackCrownTech](https://github.com/BlackCrownTechCEO) · Built with Astro"
   },
 
   "navigation_button": {
@@ -41,8 +41,8 @@
   },
 
   "metadata": {
-    "meta_author": "Jason Lechner — BlackCrownTech",
+    "meta_author": "BlackCrownTech",
     "meta_image": "/images/og-image.png",
-    "meta_description": "BlackCrownTech builds autonomous AI agents, secure relay networks, and developer tooling. Founded by Jason Lechner in Tirol, Austria."
+    "meta_description": "BlackCrownTech ships eleven open-source AI projects — Anti-Sloper, VOID OMEGA Network, BlackCrownAgent, CrownForge Harness, claude-code-mcp, and more. Autonomous coding agents, encrypted relays, MCP servers, quality tooling."
   }
 }

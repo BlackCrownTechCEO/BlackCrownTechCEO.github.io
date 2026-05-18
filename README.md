@@ -2,7 +2,7 @@
 
 Source for **https://blackcrowntechceo.github.io**.
 
-Astro 6 static site for the BlackCrownTech engineering studio. Dark royal-gold theme. Tailwind v4 + React 19 islands. Built on top of the [PowerAI Astro](https://github.com/sitepins/powerai-astro) template by Sitepins, heavily rebranded and trimmed for portfolio use.
+Astro 6 static site for the BlackCrownTech engineering studio. Dark theme with purple accent. Tailwind v4 + React 19 islands. Built on top of the [PowerAI Astro](https://github.com/sitepins/powerai-astro) template by Sitepins, rebranded and trimmed for portfolio use.
 
 ## What's on the site
 
@@ -64,4 +64,3 @@ Enable once in GitHub repo settings → **Pages** → **Build and deployment** �
 
 Jason Lechner — Founder & CEO
 [jasonlechner.business@gmail.com](mailto:jasonlechner.business@gmail.com)
-Wattens, Tirol — Austria

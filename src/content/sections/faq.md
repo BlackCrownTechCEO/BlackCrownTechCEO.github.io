@@ -17,6 +17,6 @@ faq_list:
   - question: What's your stack?
     answer: "Python (FastAPI, Astro for content sites), TypeScript (Next.js 16, React 19, Astro), Rust where it earns its keep, plus the Claude Agent SDK, MCP servers, RuVector for memory, and Postgres/Supabase for persistence. Pragmatic, fast, and observable."
 
-  - question: Where are you based, and do you work remotely?
-    answer: "Wattens, Tirol (Austria), CET timezone. We work fully remote and have shipped for partners in EU, UK, and US — but the canonical legal address and project oversight stay in Austria."
+  - question: Do you work remotely?
+    answer: "Yes — fully remote. We've shipped for partners across EU, UK, and US, and run asynchronously over email + scoped calls. No public Discord, no Slack channels, no surprise standups."
 ---
