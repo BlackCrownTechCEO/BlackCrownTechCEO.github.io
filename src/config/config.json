@@ -1,0 +1,48 @@
+{
+  "site": {
+    "title": "BlackCrownTech — Autonomous AI Systems from the Alps",
+    "base_url": "https://blackcrowntechceo.github.io",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.svg",
+    "logo": "/images/logo.svg",
+    "logo_width": "180",
+    "logo_height": "44",
+    "logo_text": "BlackCrownTech"
+  },
+
+  "settings": {
+    "sticky_header": true,
+    "pagination": 9,
+    "summary_length": 200,
+    "blog_folder": "blog",
+    "case_studies_folder": "case-studies",
+    "career_folder": "careers"
+  },
+  "params": {
+    "contact_form_action": "mailto:jasonlechner.business@gmail.com",
+    "apply_form_action": "mailto:jasonlechner.business@gmail.com",
+    "newsletter_form_action": "#",
+    "footer_text": "Autonomous AI agents, secure relays, and developer tooling — built in Tirol, Austria.",
+    "mail": "jasonlechner.business@gmail.com",
+    "phone": "+43 676 5943353",
+    "copyright": "© [BlackCrownTech](https://github.com/BlackCrownTechCEO) · Built with Astro · Wattens, Tirol"
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Hire us",
+    "link": "/contact"
+  },
+
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  },
+
+  "metadata": {
+    "meta_author": "Jason Lechner — BlackCrownTech",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "BlackCrownTech builds autonomous AI agents, secure relay networks, and developer tooling. Founded by Jason Lechner in Tirol, Austria."
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 88" width="360" height="88" role="img" aria-label="BlackCrownTech">
+  <defs>
+    <linearGradient id="lgold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7d27a"/>
+      <stop offset="55%" stop-color="#f5b955"/>
+      <stop offset="100%" stop-color="#c89a3c"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(8 12)">
+    <path d="M8 24 L17 36 L22 19 L30 38 L38 19 L43 36 L52 24 L48 48 L12 48 Z"
+          fill="url(#lgold)" stroke="#0a0a0a" stroke-width="1.2" stroke-linejoin="round"/>
+    <circle cx="17" cy="20" r="2.4" fill="#f7d27a"/>
+    <circle cx="30" cy="14" r="3" fill="#f7d27a"/>
+    <circle cx="43" cy="20" r="2.4" fill="#f7d27a"/>
+    <rect x="12" y="50" width="36" height="3" rx="1.2" fill="url(#lgold)"/>
+  </g>
+
+  <g font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="800" letter-spacing="-0.5">
+    <text x="76" y="54" font-size="30" fill="#f5f5f5">
+      Black<tspan fill="url(#lgold)">Crown</tspan>Tech
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "name": "github",
+      "icon": "FaGithub",
+      "link": "https://github.com/BlackCrownTechCEO"
+    },
+    {
+      "name": "github-org",
+      "icon": "FaGithub",
+      "link": "https://github.com/BlackCrownTech-Inc"
+    },
+    {
+      "name": "email",
+      "icon": "FaEnvelope",
+      "link": "mailto:jasonlechner.business@gmail.com"
+    }
+  ]
+}

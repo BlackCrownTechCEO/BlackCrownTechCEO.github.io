@@ -1,0 +1,24 @@
+{
+  "main": [
+    { "name": "Home", "url": "/" },
+    { "name": "Projects", "url": "/projects" },
+    { "name": "About", "url": "/about" },
+    { "name": "Contact", "url": "/contact" }
+  ],
+  "footer_company": [
+    { "name": "Home", "url": "/" },
+    { "name": "About", "url": "/about" },
+    { "name": "Projects", "url": "/projects" },
+    { "name": "Contact", "url": "/contact" }
+  ],
+  "footer_resource": [
+    { "name": "GitHub", "url": "https://github.com/BlackCrownTechCEO" },
+    { "name": "Anti-Sloper", "url": "https://github.com/BlackCrownTech-Inc/Anti-Sloper" },
+    { "name": "VOID OMEGA", "url": "https://github.com/BlackCrownTech-Inc/VOID-OMEGA-network" },
+    { "name": "VOID.Chat", "url": "https://github.com/BlackCrownTechCEO/VOID.Chat" }
+  ],
+  "footer_legal": [
+    { "name": "Imprint", "url": "/about" },
+    { "name": "Contact", "url": "/contact" }
+  ]
+}
