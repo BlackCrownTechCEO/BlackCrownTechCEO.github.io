@@ -1,0 +1,149 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import Badge from "@/components/Badge.astro";
+
+const page_header = {
+  badge: "Sponsor",
+  title: "Back the studio.\n<br/>\n<mark>Get more shipped.</mark>",
+  subtitle: "Open source is most of what BlackCrownTech makes — Anti-Sloper, MCP servers, agent skills, and the VOID OMEGA stack. Sponsorships pay for the hours that keep them maintained, documented, and free for the rest of the ecosystem. Pick a channel that suits you; every cent goes back into the code.",
+};
+
+const tiers = [
+  {
+    icon: "☕",
+    name: "Buy Me a Coffee",
+    tagline: "One-off tip — fastest way to say thanks.",
+    body: "Card payment, no account required, takes under a minute. Best for a one-time thank-you after a skill or MCP server saved you an afternoon.",
+    cta: "Buy a coffee",
+    url: "https://www.buymeacoffee.com/blackcrowntech",
+    accent: "from-amber-400/30 via-amber-500/10",
+    badge: "One-off",
+  },
+  {
+    icon: "🩷",
+    name: "Ko-fi",
+    tagline: "One-off OR monthly — your call.",
+    body: "Pay-what-you-want with optional monthly membership tiers. 0% platform fee, goes straight to the studio.",
+    cta: "Sponsor on Ko-fi",
+    url: "https://ko-fi.com/blackcrowntech",
+    accent: "from-pink-400/30 via-pink-500/10",
+    badge: "Flexible",
+  },
+  {
+    icon: "🐙",
+    name: "GitHub Sponsors",
+    tagline: "Recurring sponsor — show up on the repos.",
+    body: "Monthly tiers from $5 upwards. Your avatar appears in every README of the projects you back, and you get a private Sponsors-only thread for support questions.",
+    cta: "Sponsor on GitHub",
+    url: "https://github.com/sponsors/BlackCrownTechCEO",
+    accent: "from-fuchsia-400/30 via-purple-500/10",
+    badge: "Recurring",
+    recommended: true,
+  },
+  {
+    icon: "🅿️",
+    name: "PayPal.me",
+    tagline: "Send any amount, any currency.",
+    body: "Classic PayPal link — works everywhere PayPal works. Best if you already have a balance you'd like to direct toward open source.",
+    cta: "PayPal the studio",
+    url: "https://paypal.me/BlackCrownTech",
+    accent: "from-sky-400/30 via-sky-500/10",
+    badge: "One-off",
+  },
+  {
+    icon: "💳",
+    name: "Stripe Payment Link",
+    tagline: "Direct card payment via Stripe.",
+    body: "Self-serve Stripe Checkout — pick an amount, pay by card, no account needed. Best for corporate sponsors who want a clean Stripe invoice. Link will be activated as soon as the studio publishes it — email to be added to the waitlist.",
+    cta: "Email to request Stripe link",
+    url: "mailto:jasonlechner.business@gmail.com?subject=Stripe%20sponsor%20link",
+    accent: "from-indigo-400/30 via-indigo-500/10",
+    badge: "Corporate",
+  },
+  {
+    icon: "📄",
+    name: "Invoice / Bank Transfer (EU)",
+    tagline: "Corporate sponsorship with proper paperwork.",
+    body: "For agencies or AT/EU companies that need a formal invoice + IBAN transfer. Email and we'll send an Austrian Rechnung with VAT details.",
+    cta: "Request invoice",
+    url: "mailto:jasonlechner.business@gmail.com?subject=Sponsorship%20Invoice%20Request",
+    accent: "from-emerald-400/30 via-emerald-500/10",
+    badge: "EU / Corporate",
+  },
+];
+---
+
+<Base
+  title="Sponsor BlackCrownTech"
+  meta_title="Sponsor — BlackCrownTech"
+  description="Support BlackCrownTech open source — Anti-Sloper, VOID OMEGA, agent skills, MCP servers. Sponsor via GitHub Sponsors, Ko-fi, Buy Me a Coffee, PayPal, Stripe, or invoice."
+>
+  <PageHeader page_header={page_header} />
+
+  <section>
+    <div class="main-container">
+      <div class="container">
+        <div class="container-padding-x container-padding-y">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {tiers.map((t) => (
+              <a
+                href={t.url}
+                target={t.url.startsWith("http") ? "_blank" : "_self"}
+                rel={t.url.startsWith("http") ? "noopener noreferrer" : undefined}
+                class={`group relative flex flex-col gap-4 border ${t.recommended ? "border-primary/40" : "border-border/7"} bg-gradient-dark rounded-3xl p-7 overflow-hidden transition hover:border-primary/60`}
+              >
+                <div class={`absolute -top-24 -right-24 w-72 h-72 rounded-full bg-gradient-to-br ${t.accent} to-transparent blur-3xl opacity-60 group-hover:opacity-90 transition`} />
+
+                <div class="flex items-start justify-between gap-3 relative z-1">
+                  <div class="w-14 h-14 rounded-2xl border border-primary/30 bg-primary/10 flex items-center justify-center text-2xl">
+                    {t.icon}
+                  </div>
+                  <div class="flex flex-col items-end gap-1.5">
+                    {t.recommended && (
+                      <span class="text-[0.65rem] tracking-widest uppercase border border-primary/60 text-primary bg-primary/10 rounded-full px-2.5 py-1 font-mono">
+                        Recommended
+                      </span>
+                    )}
+                    <span class="text-[0.65rem] tracking-widest uppercase border border-border/30 text-gray bg-dark/40 rounded-full px-2.5 py-1 font-mono">
+                      {t.badge}
+                    </span>
+                  </div>
+                </div>
+
+                <div class="relative z-1">
+                  <h3 class="text-h5 font-semibold mb-2">{t.name}</h3>
+                  <p class="text-sm text-text_light/90 mb-3 leading-relaxed">{t.tagline}</p>
+                  <p class="text-sm text-gray leading-relaxed">{t.body}</p>
+                </div>
+
+                <div class="relative z-1 flex items-center gap-1.5 text-sm font-semibold text-primary mt-auto">
+                  {t.cta}
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" class="transition group-hover:translate-x-1">
+                    <path fill="currentColor" d="M5 12h12.2l-4.6-4.6L14 6l7 7-7 7-1.4-1.4 4.6-4.6H5z"/>
+                  </svg>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div class="mt-16 max-w-3xl mx-auto text-center">
+            <Badge>Where the money goes</Badge>
+            <h3 class="mt-4 text-3xl font-semibold tracking-tight">Hours, not stickers.</h3>
+            <p class="mt-4 text-gray leading-relaxed">
+              Sponsorships fund maintenance time on the open-source projects — keeping Anti-Sloper aligned
+              with every new model, shipping MCP-server updates the day after spec changes, writing
+              proper docs instead of "see the code", and keeping the VOID OMEGA reference relays running
+              for community testing. No swag, no Patreon-only podcasts. Just more code that other teams
+              can use.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3 justify-center">
+              <a href="/projects" class="btn btn-primary">See what you'd be funding</a>
+              <a href="https://github.com/BlackCrownTechCEO" target="_blank" rel="noopener noreferrer" class="btn bg-dark/30 border border-border/15">Read the source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

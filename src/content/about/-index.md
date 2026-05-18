@@ -2,7 +2,7 @@
 title: "About BlackCrownTech"
 meta_title: "About — BlackCrownTech"
 description: "BlackCrownTech is an Austrian AI engineering studio founded by Jason Lechner, building autonomous agents, secure relays, and developer tooling from Tirol."
-image: "/images/image-placeholder.png"
+image: "/images/teams/jason-lechner.webp"
 draft: false
 page_header:
   title: |
@@ -20,11 +20,11 @@ who_we_are:
       <br/>
       <br/>
     Today, BlackCrownTech is the home of Anti-Sloper (quality skill for AI coding agents), VOID OMEGA (autonomous secure-relay network), BlackCrownAgent (offline AI coding agent), CrownForge Harness, VOID.Chat, and a portfolio of MCP servers, agent skills, and developer plugins. Every product lives in production code, not in a pitch deck.
-  image: "/images/about-banner.png"
+  image: "/images/teams/jason-lechner.webp"
 what_our_goals:
   badge: "Mission & Vision"
   title: "Software that earns its place on your machine."
-  image: "/images/about-banner.png"
+  image: "/images/teams/jason-lechner.webp"
   mission:
     title: "Our Mission"
     content: |
@@ -42,16 +42,17 @@ what_our_goals:
       We want BlackCrownTech infrastructure — relays, harnesses, skills, memory layers — to be the quiet backbone behind a thousand AI-native products. Open source where it earns scale, proprietary where it earns the studio.
     icon: "/images/icons/vision.svg"
 our_team:
-  badge: "Founder & Team"
-  title: "Small Team. Sharp Focus."
-  team_list:
-    - name: "Jason Lechner"
-      position: "Founder & CEO"
-      image: "/images/teams/avatar-3.png"
-    - name: "Vetted Contractors"
-      position: "EU Agent Engineering"
-      image: "/images/teams/john-doe.jpg"
-    - name: "Open Source Contributors"
-      position: "Anti-Sloper · VOID OMEGA · MCP"
-      image: "/images/teams/mike-johnson.jpg"
+  badge: "Founder"
+  title: "One founder. Sharp focus."
+  founder:
+    name: "Jason Lechner"
+    role: "Founder & CEO"
+    location: "Wattens, Tirol — Austria"
+    image: "/images/teams/jason-lechner.webp"
+    bio: |
+      English native speaker, rooted in Tirol, technology-driven. I run BlackCrownTech hands-on — architecture, prompt engineering, secure infrastructure, agent orchestration, and product polish. No fake teammates, no agency overhead, no excuses. When you hire BlackCrownTech, you get me on the keyboard.
+    links:
+      - { label: "Email", url: "mailto:jasonlechner.business@gmail.com" }
+      - { label: "GitHub", url: "https://github.com/BlackCrownTechCEO" }
+      - { label: "Sponsor", url: "/sponsor" }
 ---

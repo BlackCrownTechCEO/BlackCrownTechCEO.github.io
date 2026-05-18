@@ -27,3 +27,4 @@ yarn.lock
 
 # ide
 .idea/
+tsconfig.tsbuildinfo

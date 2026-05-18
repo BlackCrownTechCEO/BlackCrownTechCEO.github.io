@@ -3,22 +3,25 @@
     { "name": "Home", "url": "/" },
     { "name": "Projects", "url": "/projects" },
     { "name": "About", "url": "/about" },
+    { "name": "Sponsor", "url": "/sponsor" },
     { "name": "Contact", "url": "/contact" }
   ],
   "footer_company": [
     { "name": "Home", "url": "/" },
     { "name": "About", "url": "/about" },
     { "name": "Projects", "url": "/projects" },
+    { "name": "Sponsor", "url": "/sponsor" },
     { "name": "Contact", "url": "/contact" }
   ],
   "footer_resource": [
     { "name": "GitHub", "url": "https://github.com/BlackCrownTechCEO" },
-    { "name": "Anti-Sloper", "url": "https://github.com/BlackCrownTech-Inc/Anti-Sloper" },
-    { "name": "VOID OMEGA", "url": "https://github.com/BlackCrownTech-Inc/VOID-OMEGA-network" },
-    { "name": "VOID.Chat", "url": "https://github.com/BlackCrownTechCEO/VOID.Chat" }
+    { "name": "GitHub Sponsors", "url": "https://github.com/sponsors/BlackCrownTechCEO" },
+    { "name": "Ko-fi", "url": "https://ko-fi.com/blackcrowntech" },
+    { "name": "Buy Me a Coffee", "url": "https://www.buymeacoffee.com/blackcrowntech" }
   ],
   "footer_legal": [
     { "name": "Imprint", "url": "/about" },
-    { "name": "Contact", "url": "/contact" }
+    { "name": "Contact", "url": "/contact" },
+    { "name": "Sponsor", "url": "/sponsor" }
   ]
 }

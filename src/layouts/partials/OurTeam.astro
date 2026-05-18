@@ -4,7 +4,7 @@ interface Props {
   data: any;
 }
 const { data } = Astro.props;
-const { badge, title, team_list } = data;
+const { badge, title, founder } = data;
 ---
 
 <section>
@@ -12,31 +12,56 @@ const { badge, title, team_list } = data;
     <div class="container">
       <div class="container-padding-y container-padding-x">
         <SectionHeader title={title} badge={badge} />
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2.5">
-          {team_list.map((member: any) => {
-            const uid = `team-${Math.random().toString(36).slice(2, 8)}`;
-            return (
-              <div
-                id={uid}
-                style="opacity:0"
-                class="bg-card/70 flex flex-col gap-5 items-start pb-5 pt-2.5 px-2.5 relative rounded-3xl w-full border border-border/6 group"
-              >
+
+        <div
+          id="founder-card"
+          style="opacity:0"
+          class="relative max-w-5xl mx-auto bg-card/70 border border-border/6 rounded-4xl p-3 sm:p-4 overflow-hidden"
+        >
+          <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
+          <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none" />
+
+          <div class="relative grid md:grid-cols-5 gap-6 md:gap-10 items-center">
+            <div class="md:col-span-2">
+              <div class="relative rounded-3xl overflow-hidden aspect-square w-full bg-gradient-to-br from-primary/20 via-card to-secondary/10 border border-border/10">
                 <img
-                  src={member.image}
-                  alt={member.name}
-                  width="300"
-                  height="300"
-                  class="w-full h-full object-cover rounded-3xl object-top grayscale-100 group-hover:grayscale-0 transition-all duration-300"
+                  src={founder.image}
+                  alt={founder.name}
+                  width="600"
+                  height="600"
+                  loading="lazy"
+                  class="w-full h-full object-cover object-center"
                 />
-                <div class="relative shrink-0 w-full">
-                  <div class="flex flex-col gap-1 items-start px-4">
-                    <h3 class="font-medium text-2xl">{member.name}</h3>
-                    <p class="text-gray">{member.position}</p>
-                  </div>
-                </div>
+                <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none" />
               </div>
-            );
-          })}
+            </div>
+
+            <div class="md:col-span-3 px-2 sm:px-6 py-4">
+              <h3 class="text-3xl sm:text-4xl font-semibold tracking-tight">{founder.name}</h3>
+              <p class="mt-2 text-primary font-medium">{founder.role}</p>
+              <p class="text-gray text-sm font-mono mt-0.5">{founder.location}</p>
+
+              <p class="mt-6 text-lg text-text_light/90 leading-relaxed">{founder.bio}</p>
+
+              {founder.links && (
+                <div class="mt-7 flex flex-wrap gap-2.5">
+                  {founder.links.map((l: any) => (
+                    <a
+                      href={l.url}
+                      target={l.url.startsWith("http") ? "_blank" : "_self"}
+                      rel={l.url.startsWith("http") ? "noopener noreferrer" : undefined}
+                      class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/15 bg-dark/40 text-sm font-medium hover:border-primary/50 hover:bg-primary/10 transition"
+                    >
+                      {l.label}
+                      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                        <path fill="currentColor" d="M5 12h12.2l-4.6-4.6L14 6l7 7-7 7-1.4-1.4 4.6-4.6H5z"/>
+                      </svg>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -45,13 +70,13 @@ const { badge, title, team_list } = data;
 
 <script>
   import { animateMini as animate, inView } from "motion";
-  function initOurTeam() {
-    document.querySelectorAll<HTMLElement>('[id^="team-"]').forEach((el, i) => {
-      el.style.opacity = "0";
-      inView(el, () => {
-        animate(el, { opacity: [0, 1], transform: ["translateY(20px)", "translateY(0)"] }, { duration: 0.5, ease: "easeInOut", delay: i * 0.1 });
-      }, { margin: "-100px", amount: 0.1 });
-    });
+  function initFounder() {
+    const el = document.getElementById("founder-card") as HTMLElement | null;
+    if (!el) return;
+    el.style.opacity = "0";
+    inView(el, () => {
+      animate(el, { opacity: [0, 1], transform: ["translateY(20px)", "translateY(0)"] }, { duration: 0.6, ease: "easeInOut" });
+    }, { margin: "-100px", amount: 0.1 });
   }
-  document.addEventListener("astro:page-load", initOurTeam);
+  document.addEventListener("astro:page-load", initFounder);
 </script>

@@ -1,9 +1,9 @@
 ---
 enable: true
-title: "Ready to ship the next agent system?"
-description: "Tell us the problem in one paragraph. We reply with scope, timeline, and a price range — usually within 24 hours."
+title: "Like the work? Back the studio."
+description: "Most of what BlackCrownTech makes is free and open source. If a skill, MCP server, or agent saved you a weekend, a coffee back makes the next release happen sooner."
 button:
   enable: true
-  label: "Start a Conversation"
-  link: "mailto:jasonlechner.business@gmail.com?subject=BlackCrownTech%20Inquiry"
+  label: "Sponsor BlackCrownTech"
+  link: "/sponsor"
 ---
